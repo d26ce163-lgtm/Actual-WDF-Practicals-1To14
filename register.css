@@ -1,0 +1,163 @@
+/* register.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef3f9;
+}
+
+/* Header */
+
+h1{
+    background:#1565c0;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Navigation */
+
+a{
+    text-decoration:none;
+    color:#1565c0;
+    font-weight:bold;
+}
+
+body > a{
+    margin:0 10px;
+}
+
+body > hr:first-of-type + a{
+    display:inline-block;
+    margin-top:15px;
+}
+
+h2{
+    text-align:center;
+    color:#1565c0;
+    margin:30px 0;
+}
+
+/* Form */
+
+form{
+    width:450px;
+    margin:0 auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.2);
+}
+
+table{
+    width:100%;
+}
+
+td{
+    padding:10px;
+}
+
+td:first-child{
+    font-weight:bold;
+    width:40%;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password]{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+input:focus{
+    outline:none;
+    border:2px solid #1565c0;
+}
+
+input[type=submit],
+input[type=reset]{
+    width:48%;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    color:white;
+    font-size:16px;
+}
+
+input[type=submit]{
+    background:#1565c0;
+}
+
+input[type=submit]:hover{
+    background:#0d47a1;
+}
+
+input[type=reset]{
+    background:#6c757d;
+}
+
+input[type=reset]:hover{
+    background:#555;
+}
+
+/* Bottom */
+
+p{
+    text-align:center;
+    margin:20px 0 10px;
+}
+
+p + a{
+    display:block;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+hr{
+    margin:20px 0;
+}
+
+body > p:last-child{
+    background:#1565c0;
+    color:white;
+    padding:15px;
+    margin:0;
+}
+
+/* Responsive */
+
+@media(max-width:600px){
+
+form{
+    width:95%;
+    padding:20px;
+}
+
+table,
+tr,
+td{
+    display:block;
+    width:100%;
+}
+
+td{
+    padding:5px 0;
+}
+
+input[type=submit],
+input[type=reset]{
+    width:100%;
+    margin-top:10px;
+}
+
+}

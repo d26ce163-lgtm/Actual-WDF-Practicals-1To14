@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Events</title>
+    <link rel="stylesheet" href="p6.css">
+    <script src="p6.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>StudentHub Events</h1>
+        <p>Explore upcoming college events</p>
+    </header>
+
+    <main class="container">
+        <div class="controls">
+            <input type="search" id="searchInput"
+                   placeholder="Search events..." aria-label="Search events">
+
+            <select id="categoryFilter" aria-label="Filter by category">
+                <option value="All">All Categories</option>
+                <option value="Technical">Technical</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Sports">Sports</option>
+                <option value="Academic">Academic</option>
+            </select>
+
+            <select id="sortSelect" aria-label="Sort events">
+                <option value="date">Sort by Date</option>
+                <option value="name">Sort by Name</option>
+            </select>
+        </div>
+
+        <p id="status" role="status" aria-live="polite">Loading events...</p>
+        <section id="eventList" class="event-list"></section>
+
+        <div class="pagination">
+            <button id="prevBtn" disabled>Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextBtn" disabled>Next</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentHub Portal</p>
+    </footer>
+
+</body>
+</html>

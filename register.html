@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub Portal - Register</title>
+    <link rel="stylesheet" href="register.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            margin: 0;
+            padding: 25px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #1e3a8a;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #1d4ed8;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .register-form {
+            max-width: 450px;
+            margin: 20px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000015;
+        }
+
+        .register-form label {
+            display: block;
+            margin-top: 14px;
+            font-weight: bold;
+        }
+
+        .register-form input,
+        .register-form select {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 11px;
+            margin-top: 6px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+        }
+
+        .register-form button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #1d4ed8;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .register-form button:hover {
+            background: #1e40af;
+        }
+
+        #admin-code-box {
+            padding: 12px;
+            margin-top: 15px;
+            background: #fff7ed;
+            border-radius: 8px;
+        }
+
+        #admin-code-box small {
+            display: block;
+            margin-top: 8px;
+            color: #9a3412;
+        }
+
+        .bottom {
+            text-align: center;
+        }
+
+        [hidden] {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>StudentHub Portal</h1>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="login.html">Login</a> |
+        <a href="register.html">Register</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h2>Create Your Account</h2>
+
+    <form action="register.php" method="post" class="register-form">
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname"
+               maxlength="100" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"
+               maxlength="150" required>
+
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" name="mobile"
+               maxlength="20" required>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"
+               maxlength="100" autocomplete="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"
+               minlength="8" autocomplete="new-password" required>
+
+        <label for="confirmpassword">Confirm Password</label>
+        <input type="password" id="confirmpassword"
+               name="confirmpassword" minlength="8"
+               autocomplete="new-password" required>
+
+        <label for="role">Register As</label>
+        <select name="role" id="role" required>
+            <option value="" selected disabled>-- Select Student or Admin --</option>
+            <option value="student">Student</option>
+            <option value="admin">Admin</option>
+        </select>
+
+        <div id="admin-code-box" hidden>
+            <label for="admin_code">Admin Registration Code</label>
+            <input type="password" name="admin_code" id="admin_code"
+                   autocomplete="off">
+
+            <small>
+                Admin registration requires an authorized registration code.
+            </small>
+        </div>
+
+        <button type="submit">Create Account</button>
+
+        <button type="reset"
+                style="background:#64748b; margin-top:10px;">
+            Clear Form
+        </button>
+
+    </form>
+
+    <p class="bottom">
+        Already have an account?
+        <a href="login.html">Login Here</a>
+    </p>
+
+    <script>
+        const roleSelect = document.getElementById("role");
+        const adminBox = document.getElementById("admin-code-box");
+        const adminCode = document.getElementById("admin_code");
+
+        function updateRoleFields() {
+            const isAdmin = roleSelect.value === "admin";
+
+            adminBox.hidden = !isAdmin;
+            adminCode.required = isAdmin;
+
+            if (!isAdmin) {
+                adminCode.value = "";
+            }
+        }
+
+        roleSelect.addEventListener("change", updateRoleFields);
+
+        document.querySelector(".register-form").addEventListener("reset", function () {
+            setTimeout(updateRoleFields, 0);
+        });
+
+        updateRoleFields();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f2f6fb;
+  color: #222;
+}
+
+header {
+  background: #1565c0;
+  color: white;
+  padding: 18px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+header h1 {
+  margin: 0 0 12px;
+}
+
+nav {
+  margin: 12px 0;
+}
+
+nav a {
+  display: inline-block;
+  margin: 5px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+  text-decoration: underline;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 5px;
+  border: 0;
+  border-radius: 5px;
+  background: #1565c0;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0d47a1;
+}
+
+main {
+  max-width: 800px;
+  margin: 25px auto;
+}
+
+section {
+  margin: 18px 0;
+  padding: 22px;
+  background: white;
+  border: 1px solid #dce3ec;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px #00000010;
+}
+
+h2 {
+  margin-top: 0;
+  color: #1565c0;
+}
+
+.notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #fff3cd;
+  border-color: #ffe08a;
+}
+
+.notice p {
+  margin: 0;
+}
+
+.slider {
+  padding: 20px;
+  text-align: center;
+  background: #e5efff;
+  border-radius: 6px;
+}
+
+#slideText {
+  min-height: 25px;
+  font-size: 18px;
+}
+
+.question {
+  display: block;
+  width: 100%;
+  margin: 8px 0 0;
+  text-align: left;
+  background: #e5efff;
+  color: #222;
+}
+
+.question:hover {
+  background: #d1e2ff;
+}
+
+.answer {
+  display: none;
+  margin: 0;
+  padding: 12px;
+  background: #f7f9fc;
+  border: 1px solid #e5efff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  padding: 20px;
+  background: #0009;
+}
+
+.modal-box {
+  width: 100%;
+  max-width: 400px;
+  margin: 12vh auto;
+  padding: 25px;
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 5px 20px #0004;
+}
+
+#closeModal {
+  float: right;
+  padding: 6px 10px;
+  background: #777;
+}
+
+.dark {
+  background: #222;
+  color: white;
+}
+
+.dark section,
+.dark .modal-box {
+  background: #333;
+  color: white;
+  border-color: #555;
+}
+
+.dark h2 {
+  color: #90caf9;
+}
+
+.dark .slider,
+.dark .question,
+.dark .answer {
+  background: #444;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  header,
+  section {
+    padding: 16px;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+  .notice {
+    align-items: flex-start;
+  }
+}

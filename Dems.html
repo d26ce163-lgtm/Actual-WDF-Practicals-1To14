@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ... Jay Prajapati 95477f ... </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+
+        <div class="logo">
+            <img src="University.png" alt="University Logo">
+        </div>
+
+        <div class="header-title">
+            <h1><b>StudentHub Portal</b></h1>
+            <p>Student Information & Academic Portal</p>
+        </div>
+
+    </div>
+</header>
+
+<nav>
+    <div class="nav-container">
+
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="about.html">About</a>
+
+    </div>
+</nav>
+
+<main>
+
+    <section class="welcome">
+
+        <h2>Welcome to StudentHub Portal</h2>
+
+        <p>
+            StudentHub Portal is a
+            <strong>simple web application</strong>
+            that helps students access academic information.
+        </p>
+
+        <p>
+            <b>Important:</b>
+            <i>Keep your student information safe.</i>
+        </p>
+
+        <p>
+            <i><em>Learn and grow with StudentHub.</em></i>
+        </p>
+
+        <p>
+            <i>Access your academic resources easily.</i>
+        </p>
+
+        <p>
+            Welcome, <span>Student!</span>
+        </p>
+
+    </section>
+
+    <section class="quick-access">
+
+        <h2>Quick Access</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Profile</h3>
+                <p>View your student profile</p>
+            </div>
+
+            <div class="card">
+                <h3>Attendance</h3>
+                <p>Check your attendance</p>
+            </div>
+
+            <div class="card">
+                <h3>Assignments</h3>
+                <p>View your assignments</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="resources">
+
+        <h2>Student Resources</h2>
+
+        <ul>
+            <li>Study Materials</li>
+            <li>Academic Notices</li>
+            <li>Upcoming Events</li>
+        </ul>
+
+    </section>
+
+</main>
+
+<button class="open-modal" onclick="openModal()">
+    Open StudentHub Info
+</button>
+
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2>StudentHub Portal</h2>
+
+        <p>
+            Welcome to StudentHub Portal. Here you can access
+            attendance, assignments, study materials, notices,
+            events and timetable.
+        </p>
+
+        <button class="modal-btn" onclick="closeModal()">
+            Close
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+
+        var modal = document.getElementById("myModal");
+
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+
+    }
+
+</script>
+
+<footer>
+
+    <p>2026 StudentHub Portal</p>
+    <p>All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>

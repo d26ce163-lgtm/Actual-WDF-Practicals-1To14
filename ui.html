@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub UI Demo</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+
+  <header>
+    <h1>StudentHub</h1>
+
+    <button id="menuButton">☰ Menu</button>
+
+    <nav id="menu">
+      <a href="index.html">Home</a>
+      <a href="#slider">Campus</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <button id="themeButton">Change Theme</button>
+  </header>
+
+  <main>
+    <section class="notice" id="notice">
+      <p>Notice: Student club registration is open!</p>
+      <button id="closeNotice">Close</button>
+    </section>
+
+    <section>
+      <h2>Campus Slider</h2>
+      <div class="slider" id="slider">
+        <p id="slideText">Welcome to our campus!</p>
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <button class="question">Where can I find my timetable?</button>
+      <p class="answer">Open the Dashboard and choose Timetable.</p>
+
+      <button class="question">Where can I see assignments?</button>
+      <p class="answer">Open the Assignments section.</p>
+    </section>
+
+    <section>
+      <h2>StudentHub Information</h2>
+      <button id="openModal">Open Information</button>
+    </section>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button id="closeModal">X</button>
+      <h2>Welcome to StudentHub!</h2>
+      <p>Find your student information and campus updates here.</p>
+    </div>
+  </div>
+
+  <script src="ui.js"></script>
+</body>
+</html>

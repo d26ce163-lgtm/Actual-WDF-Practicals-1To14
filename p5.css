@@ -1,0 +1,76 @@
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0; padding: 25px 15px;
+    font-family: Arial, sans-serif;
+    background: #eef3f9; color: #222;
+}
+
+.container {
+    max-width: 550px; margin: auto; padding: 30px;
+    background: white; border-radius: 12px;
+    box-shadow: 0 4px 18px #00000015;
+}
+
+h1 { text-align: center; color: #174ea6; margin-bottom: 8px; }
+.subtitle { text-align: center; color: #666; margin-bottom: 25px; }
+.form-group { margin-bottom: 17px; }
+label, legend { display: block; margin-bottom: 7px; font-weight: bold; }
+
+input[type="text"], input[type="email"], input[type="tel"],
+input[type="password"], select {
+    width: 100%; padding: 11px; border: 1px solid #bbb;
+    border-radius: 6px; font-size: 15px; background: white;
+}
+
+input:focus, select:focus, button:focus-visible {
+    outline: 2px solid #174ea6; outline-offset: 2px;
+}
+
+fieldset { border: 1px solid #ddd; border-radius: 6px; padding: 12px; }
+
+.gender-group label {
+    display: inline-flex; align-items: center; gap: 5px;
+    margin: 5px 14px 5px 0; font-weight: normal;
+}
+
+.terms-group {
+    display: flex; align-items: flex-start; gap: 8px; margin-top: 10px;
+}
+
+.terms-group input { margin-top: 3px; }
+.terms-group label { font-weight: normal; }
+
+.error { display: block; color: #c62828; font-size: 13px; margin-top: 5px; }
+.invalid { border: 1px solid #c62828 !important; }
+
+.strength-track {
+    height: 7px; background: #ddd; border-radius: 5px;
+    margin-top: 9px; overflow: hidden;
+}
+
+#strengthBar { width: 0; height: 100%; transition: width 0.3s; }
+
+#strengthText {
+    display: block; margin-top: 5px; font-size: 12px; color: #555;
+}
+
+button {
+    width: 100%; padding: 12px; margin-top: 12px;
+    border: none; border-radius: 6px; background: #174ea6;
+    color: white; font-size: 16px; cursor: pointer;
+}
+
+button:hover { background: #103b80; }
+.reset-btn { background: #666; }
+.reset-btn:hover { background: #444; }
+
+#successMessage {
+    color: #16803c; text-align: center; font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .container { padding: 20px 16px; }
+    h1 { font-size: 24px; }
+}

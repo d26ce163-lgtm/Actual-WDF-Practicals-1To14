@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="faqs.css">
+</head>
+<body>
+    <h2 style="color:green; text-align:center"> FAQS </h2>
+    <div class="faq" onclick="toggleAnswer(0)">What Is This Portal About? </div>
+    <div class="answer" >This Portal Helps User Interact With Various UI Elements Dynamically </div>
+    <div class="faq" onclick="toggleAnswer(1)">How To Use The Slider? </div>
+    <div class="answer" >Use the Buttons Below The Slider To View DIfferent Slides </div>
+     <script>
+        function toggleAnswer(index) {
+            let answers = document.getElementsByClassName("answer");
+
+            if (answers[index].style.display === "none") {
+                answers[index].style.display = "block";
+            } else {
+                answers[index].style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

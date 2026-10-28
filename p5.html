@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="p5.css">
+    <script src="p5.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Registration</h1>
+        <p class="subtitle">Fill in your details to register</p>
+
+        <form id="registrationForm" novalidate>
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name"
+                       autocomplete="name" required
+                       aria-describedby="nameError">
+                <small class="error" id="nameError" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@gmail.com"
+                       autocomplete="email" required
+                       aria-describedby="emailError">
+                <small class="error" id="emailError" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile"
+                       placeholder="10-digit mobile number"
+                       inputmode="numeric" maxlength="10"
+                       autocomplete="tel" required
+                       aria-describedby="mobileError">
+                <small class="error" id="mobileError" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Create a password"
+                       autocomplete="new-password" required
+                       aria-describedby="passwordError strengthText">
+                <div class="strength-track">
+                    <div id="strengthBar"></div>
+                </div>
+                <small id="strengthText">Password strength: Not entered</small>
+                <small class="error" id="passwordError" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword"
+                       name="confirmPassword"
+                       placeholder="Re-enter your password"
+                       autocomplete="new-password" required
+                       aria-describedby="confirmPasswordError">
+                <small class="error" id="confirmPasswordError"
+                       aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Select Course</label>
+                <select id="course" name="course" required
+                        aria-describedby="courseError">
+                    <option value="">-- Select Course --</option>
+                    <option value="Computer Engineering">Computer Engineering</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                </select>
+                <small class="error" id="courseError" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Academic Year</label>
+                <select id="year" name="year" required
+                        aria-describedby="yearError">
+                    <option value="">-- Select Year --</option>
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third Year</option>
+                    <option value="4">Fourth Year</option>
+                </select>
+                <small class="error" id="yearError" aria-live="polite"></small>
+            </div>
+
+            <fieldset class="form-group gender-group"
+                      aria-describedby="genderError">
+                <legend>Gender</legend>
+
+                <label>
+                    <input type="radio" name="gender" value="Male">
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Other">
+                    Other
+                </label>
+
+                <small class="error" id="genderError"
+                       aria-live="polite"></small>
+            </fieldset>
+
+            <div class="terms-group">
+                <input type="checkbox" id="terms" name="terms"
+                       aria-describedby="termsError">
+                <label for="terms">
+                    I accept the terms and conditions.
+                </label>
+            </div>
+            <small class="error" id="termsError" aria-live="polite"></small>
+
+            <button type="submit">Register Now</button>
+            <button type="reset" class="reset-btn">Reset Form</button>
+
+            <p id="successMessage" role="status" aria-live="polite"></p>
+
+        </form>
+    </div>
+
+</body>
+</html>

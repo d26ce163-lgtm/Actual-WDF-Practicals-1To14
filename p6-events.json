@@ -1,0 +1,138 @@
+
+[
+  {
+    "id": 1,
+    "name": "Coding Competition",
+    "category": "Technical",
+    "date": "2026-11-05",
+    "time": "10:00 AM",
+    "venue": "Computer Lab",
+    "description": "Show your programming skills."
+  },
+  {
+    "id": 2,
+    "name": "Annual Day",
+    "category": "Cultural",
+    "date": "2026-11-10",
+    "time": "05:00 PM",
+    "venue": "Main Auditorium",
+    "description": "Celebrate the college annual day."
+  },
+  {
+    "id": 3,
+    "name": "Cricket Tournament",
+    "category": "Sports",
+    "date": "2026-11-15",
+    "time": "09:00 AM",
+    "venue": "College Ground",
+    "description": "Participate in an exciting cricket event."
+  },
+  {
+    "id": 4,
+    "name": "Science Exhibition",
+    "category": "Academic",
+    "date": "2026-11-18",
+    "time": "11:00 AM",
+    "venue": "Exhibition Hall",
+    "description": "Present innovative science projects."
+  },
+  {
+    "id": 5,
+    "name": "Web Development Workshop",
+    "category": "Technical",
+    "date": "2026-11-22",
+    "time": "10:30 AM",
+    "venue": "IT Lab",
+    "description": "Learn modern web development."
+  },
+  {
+    "id": 6,
+    "name": "Dance Competition",
+    "category": "Cultural",
+    "date": "2026-11-25",
+    "time": "04:00 PM",
+    "venue": "Main Stage",
+    "description": "Showcase your dance talent."
+  },
+  {
+    "id": 7,
+    "name": "Football Match",
+    "category": "Sports",
+    "date": "2026-12-01",
+    "time": "09:30 AM",
+    "venue": "Sports Ground",
+    "description": "Compete in the interdepartment match."
+  },
+  {
+    "id": 8,
+    "name": "Career Guidance Seminar",
+    "category": "Academic",
+    "date": "2026-12-04",
+    "time": "02:00 PM",
+    "venue": "Seminar Hall",
+    "description": "Explore career and placement options."
+  },
+  {
+    "id": 9,
+    "name": "Hackathon",
+    "category": "Technical",
+    "date": "2026-12-08",
+    "time": "09:00 AM",
+    "venue": "Innovation Lab",
+    "description": "Build solutions to real-world problems."
+  },
+  {
+    "id": 10,
+    "name": "Music Festival",
+    "category": "Cultural",
+    "date": "2026-12-12",
+    "time": "06:00 PM",
+    "venue": "College Auditorium",
+    "description": "Enjoy live music and performances."
+  },
+  {
+    "id": 11,
+    "name": "Basketball Tournament",
+    "category": "Sports",
+    "date": "2026-12-15",
+    "time": "10:00 AM",
+    "venue": "Basketball Court",
+    "description": "Join the college basketball event."
+  },
+  {
+    "id": 12,
+    "name": "Research Presentation",
+    "category": "Academic",
+    "date": "2026-12-18",
+    "time": "11:30 AM",
+    "venue": "Seminar Hall",
+    "description": "Present academic research and ideas."
+  },
+  {
+    "id": 13,
+    "name": "AI and Machine Learning Workshop",
+    "category": "Technical",
+    "date": "2026-12-20",
+    "time": "10:00 AM",
+    "venue": "Computer Lab",
+    "description": "Discover artificial intelligence concepts."
+  },
+  {
+    "id": 14,
+    "name": "Rangoli Competition",
+    "category": "Cultural",
+    "date": "2026-12-23",
+    "time": "09:00 AM",
+    "venue": "College Campus",
+    "description": "Create beautiful traditional rangoli designs."
+  },
+  {
+    "id": 15,
+    "name": "Athletics Meet",
+    "category": "Sports",
+    "date": "2026-12-28",
+    "time": "08:00 AM",
+    "venue": "College Ground",
+    "description": "Participate in track and field events."
+  }
+]
